@@ -2,6 +2,8 @@
 
 ## Exorde Testnetine katılım rehberi. Sağ üstten yıldızlayıp forklamayı unutmayalım. Sorularınız olursa: [LossNode Chat](https://t.me/LossNode)
 
+## Exorde Türkiye Telegram: https://t.me/ExordeTurkish
+
 ![image](https://user-images.githubusercontent.com/101462877/201366264-ee389469-9a0d-423f-8c7f-636237afeff0.png)
 
 ## Sistem gereksinimleri:
