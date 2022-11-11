@@ -39,10 +39,8 @@ cd ExordeModuleCLI
 docker build -t exorde-cli .
 
 
-echo -e "\e[1m\e[32m3. Screen aciliyor, node baslatiliyor.. \e[0m"
+echo -e "\e[1m\e[32m3. Screen aciliyor.. \e[0m"
 echo "======================================================"
 sleep 1
 
 screen -S Exorde
-
-docker run -it exorde-cli -m $METAMASKWALLET -l 2
