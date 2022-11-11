@@ -46,3 +46,6 @@ if [ ! $METAMASKWALLET ]; then
 	read -p "Testnetler icin kullandiginiz cuzdan adresinizi girin: " METAMASKWALLET
 	echo 'export METAMASKWALLET='$METAMASKWALLET >> $HOME/.bash_profile
 fi
+
+
+docker run -it exorde-cli -m $METAMASKWALLET -l 2
