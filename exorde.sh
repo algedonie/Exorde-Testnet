@@ -47,5 +47,5 @@ if [ ! $METAMASKWALLET ]; then
 	echo 'export METAMASKWALLET='$METAMASKWALLET >> $HOME/.bash_profile
 fi
 
-
+source $HOME/.bash_profile
 docker run -it exorde-cli -m $METAMASKWALLET -l 2
