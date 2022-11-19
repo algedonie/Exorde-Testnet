@@ -50,4 +50,3 @@ screen -S Exorde
 
 
 
-docker run -it exorde-cli -m $METAMASKWALLET -l 2
