@@ -27,6 +27,13 @@ wget -O exorde.sh https://raw.githubusercontent.com/thisislexar/Exorde-Testnet/m
 
 Node bilginizi geliştirmek adına dilerseniz [Manuel Kurulum](https://github.com/thisislexar/Exorde-Testnet/blob/main/exorde_manual.md) da yapabilirsiniz.
 
+# 2) Devam.
+
+Docker runlayın.
+```
+docker run -it exorde-cli -m $METAMASKWALLET -l 2
+```
+
 
 # Bazı hatalar:
 
