@@ -9,7 +9,13 @@ echo -e "\e[0m"
 
 sleep 3
 
+if [ ! $METAMASKWALLET ]; then
+	read -p "Testnetler icin kullandiginiz cuzdan adresinizi girin: " METAMASKWALLET
+	echo 'export METAMASKWALLET='$METAMASKWALLET >> $HOME/.bash_profile
+fi
 
+
+source $HOME/.bash_profile
 
 echo -e "\e[1m\e[32m1. Sunucu guncellemesi yapiliyor.. \e[0m"
 echo "======================================================"
@@ -42,10 +48,6 @@ sleep 1
 
 screen -S Exorde
 
-if [ ! $METAMASKWALLET ]; then
-	read -p "Testnetler icin kullandiginiz cuzdan adresinizi girin: " METAMASKWALLET
-	echo 'export METAMASKWALLET='$METAMASKWALLET >> $HOME/.bash_profile
-fi
 
-source $HOME/.bash_profile
+
 docker run -it exorde-cli -m $METAMASKWALLET -l 2
