@@ -29,25 +29,30 @@ Node bilginizi geliştirmek adına dilerseniz [Manuel Kurulum](https://github.co
 
 # 2) Devam.
 
-Docker runlayın.
+
+```
+nano localConfig.json
+```
+
+## Bu kısımda okla gösterdiğim kısım `1.3.4a` değilse ok tuşlarıyla aşağı inerek onu `1.3.4a` yapın. Ardından `CTRL + X`, `Y`, `Enter` basın.
+ 
+![image](https://user-images.githubusercontent.com/101462877/204386606-caddb445-58d1-4e61-bbe4-f5d94102f3c9.png)
+
+## Devam ediyoruz.
+
+```
+docker build -t exorde-cli .
+```
+```
+docker run -d --restart unless-stopped --pull always --name exorde-cli rg.fr-par.scw.cloud/exorde-labs/exorde-cli -m $METAMASKWALLET -l 4
+```
 ```
 docker run -it exorde-cli -m $METAMASKWALLET -l 2
 ```
 
 
-# Bazı hatalar:
+![image](https://user-images.githubusercontent.com/101462877/204386184-58f86374-ee96-40eb-9e2c-efae419ecba5.png)
 
-
-
-# `Please try restarting your application.` hatası alırsanız aşağıdaki komutu tekrar girin:
-
-```
-docker run -it exorde-cli -m $METAMASKWALLET -l 2
-```
-
-
-
-# Bazı komutlar:
 
 # Node silmek için:
 
